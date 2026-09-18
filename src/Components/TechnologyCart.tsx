@@ -62,7 +62,7 @@ const TechnologyCart = ({ Technologys }: { Technologys: TechnologyType[] }) => {
                   </p>
 
                   <div className="mt-2 flex items-center justify-between border-t border-slate-100 pt-2">
-                    <span className="rounded bg-slate-50 px-2 py-1 text-[7px] text-slate-500">
+                    <span className="rounded bg-slate-100 px-2 py-1 text-[8px] text-slate-600 font-bold">
                       {technology.category}
                     </span>
 
@@ -79,13 +79,13 @@ const TechnologyCart = ({ Technologys }: { Technologys: TechnologyType[] }) => {
                   <button
                     onClick={() => handelYourStack(technology)}
                     disabled={isAdded}
-                    className={`mt-2 w-full rounded-md py-2 text-[8px] font-medium transition ${
+                    className={`mt-2 w-full rounded-md py-2 text-[10px] font-medium transition ${
                       isAdded
-                        ? "cursor-not-allowed bg-green-50 text-green-600"
+                        ? "cursor-not-allowed bg-pink-100 text-pink-600"
                         : "bg-slate-950 text-white hover:bg-slate-800"
                     }`}
                   >
-                    {isAdded ? "Added to Stack" : "Add to Stack"}
+                    {isAdded ? "✓ Added to Stack" : "Add to Stack"}
                   </button>
                 </div>
               );
